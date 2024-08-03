@@ -1,0 +1,186 @@
+*{
+    margin-left:10px;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    transition: 0.2s ease;
+    animation: color1 5s ease infinite;
+}
+@keyframes color1{
+    0% {
+        background-color: black;
+    }
+    50% {
+        background-color: rgb(9, 9, 51);
+    }
+    100% {
+        background-color: rgb(2, 2, 2);
+    }
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width:99%;
+    margin-bottom: 120px;
+    color: white;
+}
+header .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .logo img{
+    width:70px;
+}
+header .nav ul li a{
+    text-decoration: none;
+}
+header .nav ul{
+    list-style: none;
+    display: flex;
+    margin: 0px 40px;
+}
+header .nav ul li{
+ margin: 0 20px;
+}
+header .nav ul li a:hover{
+    background-color: blue;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.line{
+    background-color: red;
+    width: 817px;
+    height: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: 0.2s ease;
+    animation: scaleChange2, width1 4s ease;
+}
+@keyframes scaleChange{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    } 
+}
+@keyframes width1{
+    from {
+        width: 0;
+    }
+    to {
+        width: 817px;
+    } 
+}
+.text1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    word-spacing: 10%;
+    color: white;
+    transition: 0.2s ease;
+    animation: scaleChange 0.8s ease;
+}
+@keyframes scaleChange{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    } 
+}
+.text2{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;;
+    transition: 0.2s ease;
+    animation: scaleChange 1.2s ease;
+}
+@keyframes scaleChange{
+    from {
+        scale: 0;
+    }
+    to {
+        scale: 1;
+    } 
+}
+.text2 span{
+
+    font-size: 40px;
+    color: red;
+    font-weight: 200;
+}
+.button{
+    position: absolute;
+    left: 250px;
+}
+.button button{
+    padding: 10px;
+    width: 150px;
+    background-color: red;
+    border-radius: 20px;
+    border-color: red;
+    transition: 0.2s ease;
+    animation: bordercolor 3s ease;
+}
+@keyframes bordercolor{
+    from {
+        border-color: blue;
+    }
+    to {
+        border-color: red;
+    } 
+}
+.description{
+    max-width: 600px;
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    transition: 0.2s ease;
+    animation: scaleChange 1.6s ease;
+}
+@keyframes scaleChange{
+    from {
+        scale: 0;
+    }
+    to {
+        scale: 1;
+    } 
+}
+
+.person{
+    width: 500px;
+    height: 400px;
+    transition: 0.2s ease;
+    animation: scaleChange1 4s ease;
+}
+@keyframes scaleChange1{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    } 
+}
+.person img{
+    width: 400px;
+    height: 600px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    border: solid red 2px;
+}
+.container{
+    display: flex;
+}
+
+
